@@ -11,7 +11,7 @@ public class BuyTest extends BaseTest {
         page.setCheckout();
         page.setValidationProduct();
         page.setNext();
-        page.setRegisterEmail("teste@testeee.com");
+        page.setRegisterEmail("teste@testeere.com");
         page.setConfirmEmail();
         page.setSelectPeople();
         page.setName("Maria");
