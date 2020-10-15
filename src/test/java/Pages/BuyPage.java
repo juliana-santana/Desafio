@@ -26,7 +26,7 @@ public class BuyPage {
         dsl.select("//div[3]/div/p[2]/a[1]/span");
     }
     public void setRegisterEmail(String email){
-        dsl.register("email_create", email);
+        dsl.register("email_create", + Math.round(Math.random() * 1000) + email);
     }
     public void setConfirmEmail(){
         dsl.confirm("#SubmitCreate > span");

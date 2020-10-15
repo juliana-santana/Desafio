@@ -15,7 +15,7 @@ public class BaseTest {
      public BuyPage page;
 
     @Before
-    public void openbrowser() {
+    public void openBrowser() {
         System.setProperty("webdriver.chrome.driver", "C:\\driver\\chromedriver.exe");
         navegador = new ChromeDriver();
         navegador.manage().window().maximize();
@@ -26,7 +26,7 @@ public class BaseTest {
     }
 
         @After
-    public void closebrowser() {
+    public void closeBrowser() {
         navegador.quit();
     }
 }
